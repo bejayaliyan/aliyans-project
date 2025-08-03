@@ -1,0 +1,164 @@
+.client-login {
+  font-family: "Lato";
+  font-style: normal;
+  max-width: 1500px;
+  .login-left {
+    padding: 0px 100px 0px 100px;
+    @media screen and (max-width: 1280px) {
+    padding: 0px 60px 0px 60px;
+    }
+    @media screen and (max-width: 991px) {
+      padding: 0px 40px 0px 40px;
+    }
+    @media screen and (max-width: 767px) {
+      padding: 0px 20px 0px 20px;
+    }
+    .img-wrapper {
+      margin-top: 90px;
+      width: 100%;
+      @media screen and (max-width: 767px) {
+      display: flex;
+      justify-content: center; /* Horizontal centering */
+      }
+      img {
+        width: 248px;
+        height: 64px;
+        @media screen and (max-width: 767px) {
+          width: 120px;
+          margin: auto;
+          height: auto;
+        }
+      }
+    }
+    .login-form {
+      margin-top: 50px;
+      @media screen and (max-width: 1280px) {
+        margin-top: 38px;
+      }
+      .caption {
+        margin-bottom: 60px;
+      }
+    }
+
+    .login-button {
+      border-radius: 12px;
+      border: none;
+      background-color: rgb(244, 115, 14);
+      text-align: center;
+      height: 50px;
+      width: 100%;
+      justify-content: center;
+      padding: 3px;
+      font-weight: 700;
+      font-size: 18px;
+      color: #ffffff;
+    }
+    h3 {
+      color: #f4730e;
+      font-size: 40px;
+    }
+    h5 {
+      font-weight: 500;
+      font-size: 16px;
+      color: #000;
+    }
+    .remember-forgot {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      text-decoration-line: underline;
+      margin-top: 25px;
+      margin-bottom: 35px;
+      color: #f4730e;
+      @media screen and (max-width: 1440px) {
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+      a {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #f4730e;
+      }
+    }
+    .form-group {
+      label {
+        font-weight: 700;
+        font-size: 16px;
+        position: absolute;
+        white-space: nowrap;
+        margin-top: 18px;
+        margin-left: 19px;
+      }
+      input {
+        border: none;
+        outline: none;
+        padding-left: 120px;
+        width: 100%;
+        background: #f2f2f2;
+        border-radius: 5px;
+        height: 60px;
+      }
+    }
+  }
+  .login-right {
+    padding-top: 32px;
+    padding-right: 32px;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    img {
+      width: 100%;
+      height: 90%;
+    }
+  }
+}
+.checkbox input {
+  display: none;
+}
+
+.checkbox span {
+  height: 20px;
+  width: 20px;
+  border: 1px solid grey;
+  display: inline-block;
+  position: relative;
+  margin-right: 14px;
+  border-radius: 6px;
+}
+[type="checkbox"]:checked + span:before {
+  content: "\2714";
+  font-size: 15px;
+  position: absolute;
+  top: -0.83px;
+  left: 3px;
+}
+
+.tologin {
+  text-align: center;
+  margin-top: 35px;
+  * {
+    text-decoration: underline;
+  }
+  h6 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #673622;
+    span {
+      a {
+        color: #f4730e;
+      }
+    }
+  }
+}
+.loader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}

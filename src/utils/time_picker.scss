@@ -1,0 +1,133 @@
+.time-picker-container {
+    position:relative;
+
+
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+    -moz-appearance: textfield;
+    }
+
+
+    .time-picker-input {
+        width: 100%;
+        text-align: center;
+        border: unset;
+        background-color: unset;
+    }
+    #clock-image {
+        top: 5px !important;
+        right: 10px !important;
+        cursor: pointer;
+    }
+    .time-picker-inner-container {
+        position: absolute;
+        width: 238px;
+        margin-top: 20px;
+        z-index: 10;
+        height: 100px;
+        padding: 8px;
+        border-radius: 10px;
+        border: 1px solid rgba(244, 115, 14, 0.50);
+        background: #FFF;
+        box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.07);
+        .hours-container {
+            width: 50px;
+            display: inline-block;
+            .arrow-up {
+                position:inherit !important;
+                display: block;
+                margin:auto;
+                cursor: pointer;
+            } 
+            .arrow-down {
+                cursor: pointer;
+                position:inherit !important;
+                display: block;
+                margin:auto;
+            } 
+            .hours-input {
+                text-align: center;
+                margin:auto;
+                margin-top: 6px;
+                margin-bottom: 6px;
+                display: block;
+                width: 40px;
+                height: 29px;
+                color: #663622;
+                font-family: Lato;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                border: none;
+                background: none;
+            }
+        }
+        .mins-container {
+            width: 50px;
+            display: inline-block;
+            .arrow-up {
+                position:inherit !important;
+                display: block;
+                margin:auto;
+                cursor: pointer;
+            } 
+            .arrow-down {
+                position:inherit !important;
+                display: block;
+                margin:auto;
+                cursor: pointer;
+            } 
+            .mins-input {
+                text-align: center;
+                margin:auto;
+                margin-top: 6px;
+                margin-bottom: 6px;
+                display: block;
+                width: 40px;
+                height: 29px;
+                color: #663622;
+                font-family: Lato;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                border: none;
+                background: none;
+            }
+        }
+        .am-pm {
+            display: inline-block;
+            width: 100px;
+            span {
+                border-radius: 10px;
+                cursor: pointer;
+                margin-left: 5px;
+                padding: 8px;
+                color: #673622;
+                font-family: Lato;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            span.checked {
+                background: #673622;
+                color: #FFF; 
+            }
+        }
+    }
+}
+.time-picker-inner-container.show {
+    display: block;
+}
+.time-picker-inner-container.hide {
+    display: none;
+}

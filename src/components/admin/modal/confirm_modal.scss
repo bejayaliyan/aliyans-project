@@ -1,0 +1,83 @@
+.confirm-modal{
+    width: 654px;
+    padding:60px 88px;
+    .modal-dialog{
+        display: flex;
+        justify-content: center
+    }
+    .h4.modal-title{
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.92vw;
+        line-height: 38px;
+    }
+    .modal-content{
+        width: 654px;
+        
+        h6{
+            text-align: center;
+        }
+    .modal-header{
+        justify-content: center;
+        padding: 40px 88px 30px 88px;
+        border-bottom: 1px solid #ECE3E0;
+    }
+    .modal-body{
+       
+        >h6{
+            margin-top: 30px;
+            font-weight: 500;
+            font-size: 0.9633vw;
+            line-height: 24px;
+        }
+    }
+
+    .btns.modal-buttons {margin-top: 30px;}
+
+    .btns{ 
+        padding: 0px 88px 60px 88px;
+        h6.update{
+            padding: 14px 60px;
+            width: unset;
+        }
+        h6.delete{
+            cursor: pointer;
+            line-height: 22px;
+            color: #F4730E;
+            text-align: center;
+            padding: 14px 65px;
+            border: 1px solid #F4730E;
+            border-radius: 12px;
+        }
+    }
+    }
+}
+
+
+.DriveInfoModal .modal-content {
+    width: 1057px !important;
+    padding: 60px !important;
+    padding-top: 40px !important;
+}
+
+
+.DriveInfoModal  .modal-content .modal-header {
+    padding: 0px !important;
+    padding-bottom: 40px !important;
+}
+.DriveInfoModal  .modal-content .modal-header h5 {
+    font-size: 32px !important;
+    margin-bottom: 0px !important;
+}
+ 
+.DriveInfoModal  table th {
+    padding: 20px !important;
+    white-space: nowrap !important;
+    padding-bottom: 0px !important;
+    padding-top: 40px !important;
+}
+.DriveInfoModal  table td {
+    padding: 20px !important;
+    
+}

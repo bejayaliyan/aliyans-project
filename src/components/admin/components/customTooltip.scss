@@ -1,0 +1,32 @@
+.customTooltip{
+    width: 235px;
+    height: 111px;
+    background-color: #673622;
+    border-radius: 12px;
+    padding: 12px 15px;
+    &-header{
+        display: flex;
+        justify-content: space-between;
+        > P{
+            color: white;
+    
+        }
+        .three-dot{
+            display: flex;
+            margin-top: 10px;
+            .dot{
+                    background-color: #384455;
+                    border-radius: 50%;
+                    width: 6px;
+                    height: 6px;
+                +.dot{
+                    margin-left: 7px;
+                }
+            }
+
+        }
+    }
+    
+    
+    
+}

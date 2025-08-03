@@ -1,0 +1,434 @@
+
+.client-vehicle .main {
+    .container {
+        padding: 20px 0px 30px 0px;
+        @media screen and (max-width: 991px) {
+            max-width: 900px;
+            padding-left:20px;
+            padding-right: 20px;
+        }
+        @media screen and (max-width: 500px) {
+            padding-left:10px;
+            padding-right: 10px;
+        }
+        @media screen and (max-width: 1400px) and (min-width: 991px) {
+            min-width: 1300px;
+            padding: 20px 0px 220px 0px;
+            overflow-x: scroll;
+        }
+    
+        @media screen and (min-width: 1660px) {
+            max-width: 1540px;
+            padding: 20px 0px 220px 0px;
+        }
+    }
+}
+#card-button{
+    display:'none';
+}
+.payment-board{
+    display: flex;
+    justify-content: space-between;
+    @media only screen and (max-width:991px){
+        display: block;
+    }
+
+    .passenger-control-btn{
+        width: 818px;
+        margin-top: 30px;
+        border-radius: 10px;
+        margin-right: 20px !important;
+        @media only screen and (max-width:1200px){
+            width: 750px;
+        }
+        @media only screen and (max-width:991px){
+            width: 100%;
+            margin-right: 0px;
+        }
+    }
+    .journey-vehicle{
+        width: 622px;
+        padding-left: 0px;
+        @media only screen and (max-width:1660px){
+           width: 562px;        
+        }
+        @media only screen and (max-width:1200px){
+           width: 650px;
+        }
+        @media only screen and (max-width:991px){
+            width: 100%;
+         }
+
+        h5.header-text{
+            margin-top: 0px;
+        }
+        .custom-row{
+            .vehicle{
+                width: 50%;
+                &:last-child{
+                    padding-left: 24px;
+                }
+            }
+        }
+        .header-wrap{
+            padding-bottom: 0px;
+            .date-time-wrapper{
+                .date, .time{
+                    margin-right: 37px;
+                    margin-left: 0px;
+                    
+                    h6{
+                        margin-left: 8px;
+                    }
+                }
+                .date{
+                    @media screen and (max-width:1440px){
+                        margin-right: 10px;
+                    }
+                }
+                .time{
+                    @media screen and (max-width:1660px){
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+    .date-time-wrapper{
+        padding-top: 5px;
+    }
+    .input-wrapper{
+        margin-left: 0px;
+        position: relative;
+        border-radius: 5px;
+        background: #F3EFED;
+        @media only screen and (max-width:767px){
+            width: 100%;
+         }
+        h5 {
+            color: #000;
+            font-family: Lato;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            @media only screen and (max-width:1200px){
+                padding-left: 12px;
+            }
+        }
+        &:first-child{
+            margin-right: 18px;
+        }
+        input{
+            color: #000;
+            font-family: Lato;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            width: 100%;
+        }
+        &.instruction{
+            h5{
+                vertical-align: top;
+                padding-top: 8px;
+            }
+            div{
+                width: 100%;
+                display: table-cell;
+            }
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+        }
+        // input{
+        //     width: 200px;
+        //     &#card_billing_code{
+        //         width: 120px;
+        //     }
+        //     &#card_holder_name{
+        //         width: 120px;
+        //     }
+        // }
+    }
+    .vehicle-type{
+        margin-bottom: 2px;
+        padding-left: 24px;
+        width: 100%;
+        margin-right: 9px;
+        @media only screen and (max-width:1200px){
+            padding-left: 12px;
+        }
+        h5{
+            display: table-cell;
+            align-items: center;
+            
+        }
+        .css-b62m3t-container{
+            display: table-cell;
+        }
+        .css-1s2u09g-control{
+            height: 60px;
+            
+        }
+        
+        input{
+            // width: 100px;
+            display: table-cell;
+        }
+    }
+    
+    .MM_YY{
+        display:table;
+        align-items: center;
+        p{
+            margin: 0;
+            display: table-cell;
+            justify-content: center;
+            display: flex;
+            line-height: 1;
+            font-size: 25px;
+        }
+        input{
+            -webkit-appearance: none;
+            display: table-cell;
+        }
+        input::-webkit-inner-spin-button, 
+        input::-webkit-outer-spin-button { 
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none; 
+        }
+        
+    }
+    div.input-wrapper.instruction{
+        display: table;
+        width: 100%;
+        padding:20px 24px;
+        align-items: flex-start;
+        @media only screen and (max-width:1200px){
+            padding: 20px 12px;
+        }
+        h5{
+            margin-left: 0px;
+            padding-top: 4px;
+        }
+    }
+    textarea{
+        width: 100%;
+        padding-left: 8px;
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        min-height: 80px;
+    }
+
+}
+
+#card-holder-name{
+    font-size:16px;
+    line-height: 24px;
+    padding: 16px;
+    
+}
+.client-dashboard{
+    .dashboard{
+        background: unset;
+        .content-panel{
+            box-shadow: 0 3px 10px rgba(0, 0, 23, 0.2);
+        }
+    }
+}
+.client-payment{
+    .status-board .where-when-status:after{
+        width: 100%;
+    }
+    .status-board .vehicle-status:after{
+        width:50%;
+    }
+}
+.passenger-control-btn {
+    width: 100%;
+    .pickup-wrapper{
+        padding-left: 30px;
+    }
+    .passenger-control {
+        background: #FFFFFF;
+        // box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.07);
+        // border-radius: 10px;
+        padding: 0px 40px;
+        @media only screen and (max-width:1660px){
+            padding:0px 25px;
+        }
+
+        .custom-row {
+        @media only screen and (max-width:767px){
+            display: block;    
+        } 
+        }
+        .header-text {
+            color: #673622;
+            font-family: Lato;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            border-bottom: 1px solid #EEE7E4;
+            padding-bottom: 15px;
+        }
+        .passenger, .childrens, .bags {
+            .label {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 0.9633vw;
+                line-height: 19px;
+                color: #000000;
+            }
+
+            .body {
+                height: 60px;
+                background: #F2F2F2;
+                border-radius: 5px;
+                padding: 6px 6px 6px 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 14px;
+
+                .count {
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 0.9633vw;
+                    line-height: 19px;
+                    color: #000000;
+                }
+                .btns {
+                    height: 100%;
+                    button{
+                        height: 100%;
+                        padding: 0px 10px;
+                    }
+                    .minus {
+                        border: 1px solid #673622;
+                        border-radius: 3px;
+                        cursor: pointer;
+                        i {
+                            color: #673622;
+                            font-size: 0.84vw;
+                        }
+                    }
+
+                    .plus {
+                        background: #673622;
+                        border: 1px solid #673622;
+                        border-radius: 3px;
+                        margin-left: 6px;
+                        cursor: pointer;
+                        i {
+                            color: white;
+                            font-size: 0.84vw;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    .css-1okebmr-indicatorSeparator{
+        width: 0px;
+    }
+    .select-vehicle {
+        margin-top: 40px;
+        display: block;
+        float: right;
+        width: 670px;
+        height: 50px; 
+        background: #F4730E;
+        border-radius: 12px;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 0.93vw;
+        line-height: 55px;
+        text-align: center;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+}  
+
+
+.termsConditions {
+    margin-top: 32px;
+}
+
+.termsConditions a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #010101 !important;
+    opacity: .7;
+}
+
+.date-time-wrapper img {
+    margin-top: 4px !important;
+    margin-right: 4px;
+}
+
+.date-time-wrapper p {
+    font-size: 15px !important;
+}
+
+.date-time-wrapper {
+    margin-right: 0 !important;
+}
+.payment-options {
+    border-radius: 5px;
+    background: #F3EFED;
+    margin-bottom: 20px;
+}
+.payment-options-heading {
+    margin-top: 20px;
+}
+.special-instructions {
+    margin-top: 20px;
+}
+.client-vehicle .journey-vehicle .journey, .client-payment .journey-vehicle .journey {
+    padding: 20px 20px;
+}
+.passenger-info {
+    @media only screen and (max-width:767px){
+        display: block !important;
+    }
+    .vehicle {
+        @media only screen and (max-width:767px){
+            width: 100% !important;
+            padding-left: 0px !important;
+        }  
+    }
+}
+.custom-row.half-size {
+    @media only screen and (max-width:767px){
+        width: 100% !important;
+    }
+}
+.select-payment-method {
+    width: 100%;
+    border: none;
+    background: none;
+    font-size: 18px;
+    margin-top: 16px;
+}
+.date-time-wrapper img {
+    margin-top: 0px !important;
+}
+
+.payment-board .journey-vehicle .header-wrap .date-time-wrapper .date h6, .payment-board .journey-vehicle .header-wrap .date-time-wrapper .time h6 {
+    margin-bottom: 0px  !important;
+}
+.PaddingLeftZero{
+    padding-left: 0px !important;
+}

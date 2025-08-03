@@ -1,0 +1,125 @@
+.select_vehicle {
+    .main-wrap.vehicle-wrap {
+        margin-top: 0;
+    .vehicles {
+        width: 100%;
+        .header-wrap {
+            margin: 0;
+            padding: 30px;
+            border: 0;
+        }
+        .vehicle-information {
+            margin: 0;
+            border: 1px solid transparent;
+            background-color: #fff;
+            border-radius: 10px;
+            .content {
+                margin-right: 30px;
+                .content-wrap-1 {
+                    .car-name {
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #000;
+                    }
+                    .car-cost {
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 29px;
+                        color: #F4730E;
+                    }
+                }
+                .content-wrap-2 {
+                    button {
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+            &.active {
+                border: 1px solid #673622;
+                box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.07);
+                position: relative;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    right: -1px;
+                     top: -2px;
+                    background-image: url('../../../images/selected.svg');
+                    width: 36px;
+                    height: 36px;
+                }
+            }
+        }
+    }
+    .journey-vehicle {
+        width: 100%;
+    }
+}
+.journey {
+    .header-wrap {
+        padding-bottom: 0px;
+        align-items: center;
+    }
+    .date-time-wrapper {
+        margin: 0 !important;
+    }
+    .journey-information {
+        margin: 0;
+    }
+    .passenger-board {
+        .passenger, .childrens, .bags {
+            width: 80px;
+            margin-top: 0px;
+
+            label {
+                margin-top: 0px;
+                font-size: 16px;
+            }
+            .count {
+                padding: 20px;
+                background-color: rgba(242,242,242,0.4);
+            }
+        }
+    }
+    .dash-line {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .estimated-fair {
+        padding-top: 20px;
+        .label, .cost {
+            font-size: 24px;
+        }
+    }
+    .pickup, .dropoff {
+        background-color: rgba(242,242,242,0.4);
+    }
+    .vehicle {
+        .name {
+            background-color: rgba(242,242,242,0.4);
+        }
+    }
+}
+.btns {
+    .back {
+        margin-bottom: 30px;
+        a {
+            font-size: 18px;
+            font-weight: 700;
+            margin-left: 35px;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+    .payment {
+        span {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 50px;
+        }
+    }
+}
+}

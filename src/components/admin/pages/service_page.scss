@@ -1,0 +1,62 @@
+.service-page .card {
+    overflow: hidden !important;
+}
+
+.service-page .accordion-item {
+    background-color: #f2f2f2 !important;
+    // border-bottom: none !important;
+}
+
+.service-page .input-wrapper {
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-right: 0;
+}
+
+.service-page .input-wrapper h5{
+    width: 120px;
+    font-size: 16px;
+}
+
+.service-page .input-wrapper input {
+    width: 100%;
+    padding: 10px !important;
+}
+
+.service-page .accordion-button {
+    position: relative;
+    padding-left: 40px !important;
+    background-color: #f2f2f2 !important;
+    box-shadow: none !important;
+}
+
+.service-page .accordion-button:focus {
+    box-shadow: none;
+}
+
+.service-page textarea:focus-visible {
+    outline: none;
+}
+
+.service-page .accordion-button::after {
+    position: absolute;
+    left: 7px;
+}
+
+.service-page .quill {
+    height: 200px;
+} 
+
+.service-page .ql-container {
+    background-color: #fff;
+    height: 80% !important;
+}
+.customMargin .tab-content{
+    margin: 0px !important;
+}
+.service-page .input-wrapper h5 {
+   
+    padding-left: 10px;
+    padding-top: 10px;
+}

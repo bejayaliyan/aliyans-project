@@ -1,0 +1,55 @@
+.custom-select{
+    position: relative;
+    h6.label1{
+        color: #1AD598;
+    }
+    h6.label2{
+        color: #8B8B8B;
+    }
+    h6.label3{
+        color: #FF0000;
+        
+    }
+    span{
+        margin-left: 15px;
+        position: absolute;
+        color:#673622;
+        right: 15px;
+        top: 14px;
+    }
+    >h6{
+        padding:14px 10px;
+        font-size: 0.78vw;
+        width: 119px;
+        height: 46px;
+        cursor: pointer;
+        // text-transform: capitalize;
+        border: 2px solid #D9E1E7;
+        border-radius: 12px;
+        position: relative;
+        line-height: 1;
+        font-family: 'Lato';
+        
+    }
+    .select-panel{
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        border: 1px solid;
+        z-index: 2;
+        padding: 5px 10px;
+        border: 2px solid #D9E1E7;
+        background-color: white;
+        h6{
+            margin-bottom: 10px;
+        }
+        &.active{
+            visibility: visible;
+            opacity: 1;
+            height: auto;
+            top: 46px;
+        }
+    }
+}

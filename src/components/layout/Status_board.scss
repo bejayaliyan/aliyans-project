@@ -1,0 +1,175 @@
+.status-board {
+    position: relative;
+    background: #673622;
+    border-radius: 10px;
+    height: 71px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:10px 25px;
+    @media only screen and (max-width:991px){
+        display: none;
+    }
+    h6{
+        margin-bottom: 0px;
+        text-transform: uppercase;
+        @media only screen and (min-width:1660px){
+            font-size: 20px;
+        }
+        @media only screen and (max-width:1400px){
+            font-size: 16px;
+        }
+        @media only screen and (max-width:1300px){
+            font-size: 13px;
+        }
+    }
+    *{
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .where-when, .vehicle-select, .payment-confirmation {
+        display: flex;
+        align-items: center;
+        >div{
+            display: flex;
+            justify-content: center;
+        }
+        h5{
+            color: #673622;
+            background-color: white;
+            padding: 2px;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            margin: 0;
+            margin-right: 24px;
+        }
+    }
+    .where-when {
+        h5 {
+            background-color: #F4730E !important;
+            color: white;
+        }
+    }
+    .where-when, .vehicle-select, .payment-confirmation {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 29px;
+        position: relative;
+        color: #FFFFFF;
+        text-align: center;
+        margin-left: 20px;
+        @media only screen and (max-width:992px) {
+            font-size: 18px;
+        }
+    }
+
+    .where-when-status, .vehicle-status {
+        background: rgba(255, 255, 255, 1);
+        border-radius: 50px;
+        width: 160px;
+        height: 5px;
+        position: relative;
+        @media only screen and (max-width:1500px){
+            width: 160px;
+        }
+        @media only screen and (max-width:1300px){
+            width: 150px;
+        }
+        @media only screen and (max-width:1200px){
+            width: 100px;
+        }
+    }
+
+    .where-when-status::after {
+        content: "";
+        background: #F4730E;
+        border-radius: 50px;
+        width: 0%;
+        height: 5px;
+        position: absolute;
+        
+    }
+    .vehicle-status::after{
+        content: "";
+        background: #F4730E;
+        border-radius: 50px;
+        width: 0%;
+        height: 5px;
+        position: absolute;
+    }
+}
+.home{
+    .where-when{
+        *{
+            opacity: 1;
+        }
+    }
+}
+.client-vehicle{
+    .where-when{
+        *{
+            opacity: 1;
+        }
+    }
+    .vehicle-select{
+        h5 {
+            background-color: #F4730E !important;
+            color: white;
+        }
+        *{
+            opacity: 1;
+        }
+    }
+    .where-when-status::after {
+        content: "";
+        background: #F4730E;
+        border-radius: 50px;
+        width: 100%;
+        height: 5px;
+        position: absolute;
+        
+    }
+}
+.client-payment{
+   .where-when{
+    h5 {
+        background-color: #F4730E !important;
+        color: white;
+    }
+       *{
+           opacity: 1;
+       }
+   }
+   .vehicle-select{
+    h5 {
+        background-color: #F4730E !important;
+        color: white;
+    }
+        *{
+            opacity: 1;
+        }
+    }
+    .payment-confirmation{
+        h5 {
+            background-color: #F4730E !important;
+            color: white;
+        }
+        *{
+            opacity: 1;
+        }
+    }
+    .vehicle-status::after{
+        width: 100% !important;
+    }
+}

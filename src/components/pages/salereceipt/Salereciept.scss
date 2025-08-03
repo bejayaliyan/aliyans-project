@@ -1,0 +1,102 @@
+.sale-receipt {
+    .main {
+    .container {
+        font-family: Lato;
+        height: 80vh;
+        h2 {
+            color: #673622;
+            font-family: Lato;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+        .row > div{
+            margin-bottom: 20px;
+        }
+        padding:40px;
+        .form-group {
+            border-radius: 5px;
+            width: 100%;
+            background: #F3EFED;
+            height: 60px;
+            padding:20px;
+            display: table;
+            label {
+                display: table-cell;
+                min-width: 110px;
+                color: #000;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                opacity: 0.4;
+            }
+            .cc-label{
+                min-width: 140px !important;
+            }
+            input {
+                width: 100%;
+                display: table-cell;
+                background:none;
+                border: none;
+            }
+        }
+        .download-type {
+            input[type="radio"]{
+                accent-color:#673622;
+                width: 15px;
+                height: 15px;
+                margin-right: 10px;
+              }
+            .receiptFormat{
+                color: #000;
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin-right: 20px;
+            }
+            label  {
+                color: #000;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-right: 20px;
+            }
+        }
+        .btns {
+            margin-top: 20px;
+            display: table;
+            button {
+                display: table-cell;
+            }
+            .ok {
+                cursor: pointer;
+                margin-right: 20px;
+                width: 150px;
+                border-radius: 12px;
+                background: #F4730E;
+                padding:20px;
+                border:none;
+                color: #FFF;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            .cancel {
+                background:none;
+                border: none;
+                color: #000;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+    }
+}
+}
+

@@ -1,0 +1,211 @@
+.cms-caption.caption {
+  h5 {
+    font-size: 28px !important;
+    margin-bottom: 0;
+  }
+}
+
+.add-new-field {
+  h6 {
+    cursor: pointer;
+    background-color: #f4730e;
+    width: fit-content;
+    padding: 15px 100px;
+    float: right;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+// .customTable ul {
+//   // background:#EBBF25 ;
+// }
+.customPagination ul .customPrev a {
+  background: transparent !important;
+  border: none !important;
+}
+// .customPagination ul .customPrev a:focus-visible{
+//   --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0);
+// }
+// .customPagination ul .customNext a:focus-visible{
+//   --bs-pagination-focus-box-shadow: none !important;
+// }
+.customPagination ul .customNext a {
+  background: transparent !important;
+  border: none !important;
+}
+.customPagination ul li a span {
+  font-size: 30px;
+}
+.customPagination ul {
+  align-items: center;
+  justify-content: center;
+}
+.cms {
+  h6 {
+    margin-bottom: 0;
+  }
+
+  .cms-table-header {
+    padding-bottom: 60px;
+
+    .add-new-item.button {
+      border: 2px solid #d9e1e7;
+      border-radius: 12px;
+      padding: 9px 18px;
+      cursor: pointer;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+
+      h6 {
+        font-size: 14px;
+        padding-left: 12px;
+      }
+    }
+  }
+  .cms-tr {
+    .cms-th {
+      // padding-bottom: 20px;
+      white-space: nowrap;
+      font-size: 16px;
+      padding: 10px 10px 20px 10px;
+    }
+
+    .cms-td {
+      padding: 10px 10px 20px 10px;
+      font-size: 16px;
+      max-width: 200px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      .cms-id {
+        border: 1px solid;
+        padding: 8px 13px;
+        border-radius: 10px;
+      }
+
+      .cms-action-button {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        padding: 15px 35px;
+      }
+
+      .cms-edit-button {
+        background-color: #0d2576;
+        color: #fff;
+        margin-right: 10px;
+        padding: 10px 15px;
+      }
+
+      .field-action.disabled,
+      .cms-action-button.disabled {
+        cursor: no-drop;
+        opacity: 0.7;
+      }
+
+      .field-action {
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+      }
+
+      .status {
+        background-color: #ebbf25;
+        margin-right: 10px;
+        color: #fff;
+        padding: 10px 15px;
+      }
+
+      .cms-delete-button {
+        background-color: #bdbdbd;
+        color: #fff;
+        padding: 10px 15px;
+      }
+
+      .cms-action-button-icon {
+        color: #ffffff;
+        padding-right: 7px;
+        font-size: 14px;
+      }
+
+      h6 {
+        font-size: 12px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+.table-right-padding {
+  padding-right: 70px !important;
+}
+.customTable ul {
+  gap: 18px;
+}
+
+.pagination-icon {
+  .page-link {
+    background-color: transparent !important;
+    border: none;
+    font-weight: 700;
+    // font-size: 20px;
+  }
+}
+
+#uncontrolled-tab-example {
+  font-size: 32px;
+}
+.sub-tabs {
+  button {
+    font-size: 16px;
+    padding-bottom: 18px !important;
+  }
+}
+.seo-titles {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.social-media-links.accordion-header button {
+  font-size: 24px;
+  font-weight: 700;
+  color: #06152b !important;
+}
+
+.social-media-links.white-bg button {
+  background-color: #fff !important;
+}
+
+.service-accordion-tab {
+  background-color: #f2f2f2;
+  padding-top: 22px;
+  padding-left: 25px !important;
+
+  .nav-item {
+
+    &:first-child {
+      padding-right: 35px !important;
+    }
+  }
+  
+  button.nav-link {
+    background-color: #f2f2f2 !important;
+  }
+}
+
+.no-border {
+  .nav-item {
+    border-left: none !important;
+    &:first-child {
+      padding-right: 0 !important;
+    }
+  }
+}
+.field-image-button:focus-visible {
+  outline: none;
+}

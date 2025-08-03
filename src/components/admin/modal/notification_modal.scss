@@ -1,0 +1,50 @@
+.notification-modal{
+    width: 654px;
+    padding:60px 88px;
+    .modal-dialog{
+        display: flex;
+        justify-content: center
+    }
+    .modal-title.h4{
+        font-weight: 700;
+        font-size: 1.92vw;
+        line-height: 38px;
+        text-transform: capitalize;
+    }
+    .modal-content{
+        width: 654px;
+        h6{
+            text-align: center;
+        }
+        .modal-header{
+            justify-content: center;
+            padding: 60px 88px 40px 88px;
+            border-bottom: 1px solid #ECE3E0;
+        }
+    .modal-body{
+        >h6{
+            margin-top: 60px;
+            font-weight: 500;
+            font-size: 0.9633vw;
+            line-height: 24px;
+        }   
+    }
+    .btns{
+        padding-bottom: 40px;
+        justify-content: center;
+        h6.update{
+            padding: 14px 65px;
+            width: unset;
+        }
+        h6.delete{
+            cursor: pointer;
+            line-height: 22px;
+            color: #F4730E;
+            text-align: center;
+            padding: 14px 65px;
+            border: 1px solid #F4730E;
+            border-radius: 12px;
+        }
+    }
+    }
+}

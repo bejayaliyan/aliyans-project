@@ -1,0 +1,930 @@
+.client-vehicle .main {
+    .container {
+        padding: 20px 0px 30px 0px;
+        @media screen and (max-width: 991px) {
+            max-width: 900px;
+            padding-left:20px;
+            padding-right: 20px;
+        }
+        @media screen and (max-width: 500px) {
+            padding-left:10px;
+            padding-right: 10px;
+        }
+        @media screen and (max-width: 1400px) and (min-width: 991px) {
+            min-width: 1300px;
+            padding: 20px 0px 220px 0px;
+            overflow-x: scroll;
+        }
+    
+        @media screen and (min-width: 1660px) {
+            max-width: 1540px;
+            padding: 20px 0px 220px 0px;
+        }
+    }
+}
+.main-wrap.vehicle-wrap {
+    gap: 40px;
+    display: flex;
+    justify-content: space-between;
+    @media only screen and (max-width:991px){
+        display:block;
+    }
+    .vehicles { 
+        border-radius: 10px;
+        width: 818px;
+        cursor: pointer;
+        max-height: 963px;
+        overflow: auto;
+        @media only screen and (max-width:1200px){
+            width: 750px;
+        }
+        @media only screen and (max-width:991px){
+            width: 100%;
+        }
+        .header-wrap {
+            padding: 40px 0px 30px 0px;
+            margin-left: 40px;
+            margin-right: 40px;
+            @media only screen and (max-width:1660px){
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+            @media only screen and (max-width:1200px){
+                padding:20px;
+             }
+             @media only screen and (max-width:991px) {
+                margin:0px;
+                padding-left:0px;
+                padding-right:0px;
+             }
+            .wrap-title {
+                color: #673622;
+                font-family: Lato;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            .filters {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: #000000;
+                display: flex;
+                align-items: center;
+                img {
+                    padding-left: 15px;
+                }
+            }
+        }
+
+        .vehicle-information {
+            border-radius: 9px;
+            margin: 0px;
+            display: flex;            
+            align-items: center;
+            gap: 60px;         
+            cursor: pointer;
+            background: #fff;    
+            padding: 0px 5px 0px 30px;
+            border: 1px solid #673622;
+            margin: 0px 30px 10px 30px;
+            @media only screen and (max-width:767px){
+                padding: 0px 5px 0px 10px;
+            }
+            @media only screen and (max-width:991px) {
+                margin: 0px 0px 10px 0px;
+             }
+            &.active{
+                border: 1px solid #673622;
+                background: #F3EFED;
+                box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.07);
+                position: relative;
+                &:after {                    
+                content: '';
+                position: absolute;
+                right: 0px;
+                top: -1px;
+                width: 36px;
+                background-image: url('../../../images/selected.svg');
+                height: 36px;
+                background-repeat: no-repeat;
+                border: none;
+                }
+            }
+            @media only screen and (max-width:1660px){
+                gap: 40px;  
+            }
+            @media only screen and (max-width:1440px){
+                gap:30px
+                
+            }
+            > img{
+                width: 143px;
+                height: 81px;
+                @media only screen and (max-width:1440px){
+                    width: 150px;
+                }
+                @media only screen and (max-width:1200px){
+                    width: 120px; 
+                }
+                @media only screen and (max-width:991px){
+                    width: 80px;
+                    height: 50px;
+                }
+            }
+            .content {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;     
+                padding-bottom: 25px;
+                padding-top: 25px;
+                @media only screen and (max-width:767px){
+                    display: block;
+                    padding-bottom: 10px;
+                    padding-top: 10px;
+                }
+                .content-wrap-1 {
+                    .car-name {
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 22px;
+                        margin-bottom: 12px;
+                        @media only screen and (max-width:991px){
+                            font-size: 14px;
+                            margin-bottom: 0px;
+                        }
+                    }
+
+                    .car-cost {
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 29px;
+                        color: #F4730E;
+                        @media only screen and (max-width:991px){
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+                .content-wrap-2 {
+                    img {
+                        margin-right: 10px;
+                    }
+                    button {
+                        margin-right: 20px;
+                        background: #673622;
+                        border-radius: 3px;
+                        border: none;
+                        width: 30px;
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 25px;
+                        color: #FFFFFF;     
+                        padding: 4px 7px;
+                    }
+                }
+            }
+        }
+
+        .sort-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 24px;
+
+           
+            .apply {
+                width: 127px;
+                height: 50px;
+                background: #F4730E;
+                border-radius: 12px;    
+                border: none;
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 22px;
+                color: #FFFFFF;
+                @media screen and (max-width:1200px){
+                    width: 80px;
+                }
+            }
+        }
+    }
+    .control-body{
+        margin-top: 0px;
+        .pickup{
+            width: unset;
+        }
+    }
+}
+.css-1okebmr-indicatorSeparator{
+    width: 0px !important;
+}
+.css-1okebmr-indicatorSeparator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.journey-vehicle {    
+    width: 622px;
+    padding-left: 0px;
+    @media only screen and (max-width:1660px){
+       width: 562px;        
+    }
+    @media only screen and (max-width:1200px){
+       width: 650px;
+    }
+    @media only screen and (max-width:991px){
+        width: 100%;
+     }
+    .journey {      
+        border-radius: 10px;
+        padding: 40px 20px;
+        @media only screen and (max-width:1200px){
+            padding: 20px;
+        }
+        @media only screen and (max-width:991px){
+            padding-bottom: 0px;
+         }
+        .journey-information{
+            .pickup, .drop-off{
+                width: 100%;
+            }
+        }
+        p{
+            color: rgba(0, 0, 0, 0.6);
+            margin-bottom: 0px;
+            padding-left: 20px;
+            
+        }
+        .header-wrap {
+            border-bottom: 1px solid #EEE7E4;
+            padding-bottom: 15px;
+            .header-text{
+                margin-right: 80px;
+                @media only screen and (max-width:1660px){
+                    margin-right: 30px;
+                }
+            }
+            @media only screen and (max-width:500px){
+                display: block !important;
+             }
+            .date-time-wrapper{
+                margin-top: 8px;
+                display: flex;
+                justify-content: space-between;
+                margin-right: 37px;
+                @media only screen and (max-width:1400px){
+                    margin-right: 0px;
+                }
+                div:first-child{
+                    margin-right: 20px;
+                }
+              
+            }
+            .date, .time {   
+                display: flex;  
+                input {
+                    border: none;
+                    width: 93px !important;
+                    outline: 0;
+                }
+            }
+            
+        }
+       
+        .pickup {
+            position: relative;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            background: #F3EFED;             
+            min-height: 40px;
+            padding: 20px 24px 20px 24px;
+            margin-top: 23px;
+            @media only screen and (max-width:767px){
+                padding: 20px 10px 20px 10px;
+            }
+            .title {
+                color: #000;
+                font-family: Lato;
+                font-size: 14px;
+                width: 70px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                @media only screen and (max-width:767px){
+                    width: 100px;
+                }
+            }
+
+            .check {
+                cursor: pointer;
+            }
+           
+           .css-1hb7zxy-IndicatorsContainer {
+               display: none;
+           }
+
+           .css-1s2u09g-control {
+               border: none; 
+               background: rgba(242,242,242,0.4);                      
+           }
+           
+           .css-1pahdxg-control {
+               box-shadow: none;
+               border: none;
+               background: rgba(242,242,242,0.4);    
+           }
+        }
+
+        .pickup::before {
+            content: '';
+            position: absolute;
+            width: 17px;
+            height: 17px;
+            background-image: url("../../../images/location.svg");
+            left: -28px;
+            top: 24px;
+            @media only screen and (max-width:991px){
+                display: none;
+             }
+        }
+
+        .pickup::after {
+            content: "";
+            position: absolute;
+            border: 1px solid #e7e1e1;
+            left: -30px;
+            width: 21px;
+            top: 1px;
+            height: 40px;
+            margin: 14px 20px 0 0;
+            border-top-left-radius: 30px;
+            border-bottom: none;
+            border-top-right-radius: 30px;
+            @media only screen and (max-width:991px){
+                display: none;
+             }
+        }
+
+        .stop {
+            margin-top: 18px;
+            position: relative;
+
+            .stop-location {
+                position: relative;
+                display: flex;
+                align-items: center;
+                // background: rgba(242,242,242,0.4);  
+                background: #F3EFED;                   
+                border-radius: 5px;
+                min-height:60px;
+                padding-left: 24px;
+                padding-right: 24px;
+
+                .title {
+                    color: #000;
+                    font-family: Lato;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+
+                .check {
+                    cursor: pointer;
+            }
+
+                .css-1hb7zxy-IndicatorsContainer {
+                    display: none;
+                }
+
+                .css-1s2u09g-control {
+                    border: none; 
+                    background: rgba(242,242,242,0.4);                      
+                }
+                
+                .css-1pahdxg-control {
+                    box-shadow: none;
+                    border: none;
+                    background: rgba(242,242,242,0.4);    
+                }
+            }
+
+            .trash {
+                margin-left: 20px;
+                padding-right: 10px;
+                cursor: pointer;
+            }
+        }
+
+        .stop::after {
+            position: absolute;
+            content: ' ';
+            width: 8px;
+            height: 8px;
+            overflow: hidden;
+            background: #673622;
+            left: -25px;
+            margin: 14px 20px 0 0;
+            border: 1px solid #FFFFFF;
+            box-shadow: 0 0 0 3px #673622;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            -ms-border-radius: 100%;
+            -o-border-radius: 100%;
+            border-radius: 100%;
+            top: 12px;
+            @media only screen and (max-width:991px){
+                display: none;
+             }
+        }
+
+        .dropoff {
+            position: relative;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            background: #F3EFED;             
+            min-height: 40px;
+            padding: 20px 24px 20px 24px;
+            margin-top: 18px;
+            @media only screen and (max-width:767px){
+                padding: 20px 10px 20px 10px;
+            }
+
+            .title {
+                color: #000;
+                width: 90px;
+                font-family: Lato;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                @media only screen and (max-width:767px){
+                    width: 120px;
+                }
+            }
+
+            .check {
+                cursor: pointer;
+            }
+
+           .css-1hb7zxy-IndicatorsContainer {
+               display: none;
+           }
+
+           .css-1s2u09g-control {
+               border: none; 
+               background: rgba(242,242,242,0.4);                      
+           }
+           
+           .css-1pahdxg-control {
+               box-shadow: none;
+               border: none;
+               background: rgba(242,242,242,0.4);    
+           }
+        }
+
+        .dropoff::before {
+            content: '';
+            position: absolute;
+            width: 17px;
+            height: 17px;
+            background-image: url("../../../images/location.svg");
+            left: -28px;
+            top: 10px;
+            @media only screen and (max-width:991px){
+                display: none;
+             }
+        }
+
+        .dropoff::after {
+            content: "";
+            position: absolute;
+            border: 1px solid #e7e1e1;
+            left: -30px;
+            top: 0px;
+            bottom: 18px;
+            width: 21px;
+            height: 40px;
+            border-bottom-left-radius: 30px;
+            border-top: none;
+            border-bottom-right-radius: 30px;
+            @media only screen and (max-width:991px){
+                display: none;
+             }
+        }
+        .passenger-board {
+            margin-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            @media only screen and (max-width:767px){
+                display: block;
+             }
+
+            .passenger, .childrens, .bags {
+                border-radius: 5px;
+                border: 1px solid #673622;
+                background: #F3EFED;
+                height: 60px;
+                @media only screen and (max-width:767px){
+                    border: unset;
+                    background: unset;
+                    height: auto;
+                 }
+                .label {
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #000000;
+                    position: absolute;
+                    margin-top: 20px;
+                    margin-left: 10px;
+                    @media only screen and (max-width:767px){
+                        margin: 0;
+                        position: relative;
+                     }
+                }
+                .count {
+                    margin-top: 18px;
+                    margin-left: 108px;
+                    padding-right: 23px;
+                    @media only screen and (max-width:1440px){
+                        padding-right: 40px;
+                    }
+                    @media only screen and (max-width:1200px){
+                        width: unset;
+                        padding-right: 20px;
+                    }
+                    @media only screen and (max-width:767px){
+                        margin: 0;
+                        padding: 0;
+                     }
+                }
+            }
+        }
+
+        .vehicle {
+            margin-top: 24px;
+            .label {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                color: #000000;
+            }
+
+            .name {               
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                color: #000000;
+                padding: 20px 30px;
+                margin-top: 14px;
+                min-height: 60px;
+                overflow:auto;
+                border-radius: 5px;
+                background: #F3EFED;
+            }
+        }
+        .dash-line{
+            margin-top: 40px;
+            margin-left: -5px;
+            margin-right: -5px;
+            position: relative;
+            @media only screen and (max-width:991px){
+                margin-left: 25px;
+                margin-right: 25px;
+            }
+            
+            &:before{
+                position: absolute;
+                left:-50px;
+                content: "";
+                width: 30px;
+                height: 28.84px;
+                background-color: rgb(247,247,247);
+                border-radius: 50%;
+                @media only screen and (max-width:1660px) {
+                    left: -30px;
+                }
+            }
+            &:after{
+                position: absolute;
+                right:-50px;
+                content: "";
+                width: 30px;
+                height: 28.84px;
+                background-color: rgb(247,247,247);
+                border-radius: 50%;
+                @media only screen and (max-width:1660px) {
+                    right: -30px;
+                }
+            }
+        }
+        .estimated-fair {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 30px;
+            padding-top: 20px;
+            .label {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 29px;
+                color: #000000;
+                opacity: 0.6;
+            }
+
+            .cost {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 29px;
+                color: #F4730E;
+            }
+        }        
+    }
+
+    .btns {
+        margin-top: 60px;
+        text-align: center;
+        padding: 0px 40px;
+        @media only screen and (max-width:1660px){
+            padding: 0px 20px;
+        }
+        @media only screen and (max-width:991px){
+            margin-top: 0px;
+        }
+        .back {
+            margin-bottom: 30px;
+            a, span {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 22px;
+                color: #F4730E;
+                text-decoration: none;
+            }        
+        }
+    
+        .payment {        
+            width: 100%;
+            height: 50px; 
+            background: #F4730E;
+            border-radius: 12px;
+            margin: 0 auto;
+            cursor: pointer;
+            span {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 48px;
+                color: #FFFFFF;
+                text-decoration: none;            
+            }
+        }
+    }
+}
+.header-text {                    
+    color: #673622;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 20px;
+    @media only screen and (max-width:1200px){
+        flex-direction:column;
+    }
+}
+.vehicle {  
+    .label {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+    }
+
+    .name {               
+        background: rgba(242,242,242,0.4);                   
+        border-radius: 5px;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        padding: 20px 30px;
+        margin-top: 14px;
+    }
+}
+.vehicle-type, .sort-by {
+    position: relative;
+    display: table;
+    width: 220px;
+    align-items: center;
+    background: rgba(242,242,242,0.4);                   
+    border-radius: 5px;
+    height: 60px;
+    padding-left: 24px;                
+    @media screen and (min-width:1660px){
+        width: 260px;
+    }
+    @media screen and (max-width:1400px){
+        width: 180px;
+        padding-left: 12px;
+    }
+    @media screen and (max-width:1200px){
+        width: 150px;
+        padding-left: 12px;
+    }
+    .css-b62m3t-container{
+        display: table-cell;
+    }
+    .title {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        vertical-align: middle;
+        line-height: 19px;
+        width: 0;
+        white-space: nowrap;
+        color: #000000;              
+        display: table-cell;
+    }             
+
+   .css-1s2u09g-control {
+       border: none; 
+       background: rgba(242,242,242,0.4);       
+        height: 60px;
+   }
+   
+   .css-1pahdxg-control {
+       box-shadow: none;
+       border: none;
+       background: rgba(242,242,242,0.4);    
+   }
+}
+.client-vehicle{
+    input[type="time"]::-webkit-calendar-picker-indicator {
+        display: none;
+      }
+      .dash-line{
+        margin-top: 40px;
+        margin-left: -5px;
+        margin-right: -5px;
+        position: relative;
+        
+        &:before{
+            position: absolute;
+            left:-50px;
+            content: "";
+            width: 30px;
+            height: 28.84px;
+            background-color: rgb(247,247,247);
+            border-radius: 50%;
+            @media only screen and (max-width:1660px) {
+                left: -30px;
+            }
+        }
+        &:after{
+            position: absolute;
+            right:-50px;
+            content: "";
+            width: 30px;
+            height: 28.84px;
+            background-color: rgb(247,247,247);
+            border-radius: 50%;
+            @media only screen and (max-width:1660px) {
+                right: -30px;
+            }
+        }
+    }
+}
+.css-1okebmr-indicatorSeparator{
+    width: 0px;
+}
+.css-tlfecz-indicatorContainer{
+    color: #292D32 !important;
+}
+// .css-b62m3t-container{
+//     width: 142px;
+// }
+// .css-b62m3t-container{
+//     width: 230px;
+// }
+.client-vehicle, .client-payment{
+    .pickup-wrapper{
+        padding-left: 0px;
+    }
+    .journey-vehicle{
+        .journey{
+            @media only screen and (max-width:1660px){
+                padding: 40px 20px;
+            }
+            .estimated-fair{
+                @media only screen and (max-width:1660px){
+                    padding-left: 15px;
+                }
+            }
+            @media only screen and (max-width:991px){
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+        }
+    }
+}
+
+.vehicle-type .css-1pahdxg-control, .sort-by .css-1pahdxg-control{
+    height: 60px;
+}
+
+// .pickup p {
+//     display: inline-block !important;
+//     vertical-align: sub !important;
+// }
+
+
+.button-group {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.button-group .back {
+    width: 80px;
+}
+
+.date-time-wrapper img {
+    margin-top: 2px !important;
+    margin-right: 4px;
+}
+
+.date-time-wrapper p {
+    font-size: 15px !important;
+}
+.journey-vehicle .journey .header-wrap .date, .journey-vehicle .journey .header-wrap .time {
+   align-items: center !important;
+;
+}
+.journey-vehicle .journey .header-wrap .date-time-wrapper{
+    margin-bottom: 20px !important;
+    margin-top: 0 !important;
+}
+.vehicle-type .title, .sort-by .title {
+    padding-right:10px !important;
+}
+@media screen and (max-width: 1400px) {
+    .vehicle-type, .sort-by {
+        width: 230px !important;
+        padding: 11px !important;
+    }
+}
+@media only screen and (max-width: 1660px) {
+    .journey-vehicle .journey .header-wrap .header-text {
+        margin-right: 20px;
+    }
+}
+
+.journey-vehicle .journey .stop .stop-location .title {
+  
+    width: 70px;
+}
+.journey-vehicle .journey .dropoff .title {
+    width: 70px;
+   
+}
+.css-13cymwt-control{
+    margin-top: 2px !important;
+}
