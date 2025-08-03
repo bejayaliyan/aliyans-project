@@ -1,3 +1,7 @@
+USE
+
+node this throught nvm v16.20.2
+
 ## Project setup
 
 In the project directory, you can run:
@@ -21,7 +25,6 @@ yarn start
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.
-
 
 https://github.com/jsblend/email-template-using-nodejs/blob/main/src/index.js
 
